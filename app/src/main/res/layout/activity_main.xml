@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:elevation="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/note"
+                android:layout_centerHorizontal="true"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/btn_bg"
+                android:paddingHorizontal="10dp"
+                android:text="Create New Notes"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSee"
+                android:layout_below="@+id/btnCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Existing Notes"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_bg"
+                android:layout_marginVertical="15dp"
+                android:paddingHorizontal="10dp"
+                android:textAllCaps="false"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdate"
+                android:layout_below="@+id/btnSee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update or Delete Notes"
+                android:textColor="@color/white"
+                android:paddingHorizontal="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_bg"
+                android:textAllCaps="false"/>
+
+
+        </RelativeLayout>
+
+    </TableLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
